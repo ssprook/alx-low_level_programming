@@ -1,0 +1,469 @@
+dMin@DESKTOP-R54TNBM MINGW64 ~
+$ ssh b4ffd8927885@b4ffd8927885.96e14a5c.alx-cod.online
+The authenticity of host 'b4ffd8927885.96e14a5c.alx-cod.online (54.144.211.228)' can't be established.
+ED25519 key fingerprint is SHA256:dFBRMxdUpvuFfvEjkore0EnWqnArEPo4E8V3A9ndSJ4.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'b4ffd8927885.96e14a5c.alx-cod.online' (ED25519) to the list of known hosts.
+b4ffd8927885@b4ffd8927885.96e14a5c.alx-cod.online's password:
+root@b4ffd8927885:/# ls
+alx-low_level_programming      bin   etc   lib32   media  proc  sbin  tmp
+alx-system_engineering-devops  boot  home  lib64   mnt    root  srv   usr
+Betty                          dev   lib   libx32  opt    run   sys   var
+root@b4ffd8927885:/# cd alx-low_level_programming
+root@b4ffd8927885:/alx-low_level_programming# ls
+0x00-hello_world                  0x06-pointers_arrays_strings
+0x01-variables_if_else_while      0x07-pointers_arrays_strings
+0x02-functions_nested_loops       0x08-recursion
+0x03-debugging                    0x09-static_libraries
+0x04-more_functions_nested_loops  0x0A-argc_argv
+0x05-pointers_arrays_strings      README.md
+root@b4ffd8927885:/alx-low_level_programming# cd 0x0A-argc_argv
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# ls
+README.md
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# vi
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# ls
+main.h  README.md
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# cd main.h
+bash: cd: main.h: Not a directory
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# cd main.h
+bash: cd: main.h: Not a directory
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# vi main.h
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# vi _putchar.c
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# vi 0-whatsmyname.c
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# vi 1-args.c
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# vi 2-args.c
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# vi 3-mul.c
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# vi 4-add.c
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# vi 100-change.c
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# ls
+0-whatsmyname.c  1-args.c  3-mul.c  main.h      README.md
+100-change.c     2-args.c  4-add.c  _putchar.c
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# betty 0-whatsmyname.c
+
+========== 0-whatsmyname.c ==========
+main
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# betty 100-change.c
+
+========== 100-change.c ==========
+main
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# betty 1-args.c
+
+========== 1-args.c ==========
+main
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# betty 2-args.c
+
+========== 2-args.c ==========
+main
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# betty 3-mul.c
+
+========== 3-mul.c ==========
+_atoi
+main
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# betty 4-add.c
+
+========== 4-add.c ==========
+check_num
+main
+root@b4ffd8927885:/alx-low_level_programming/0x0A-argc_argv# betty gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-whatsmyname.c -o mynameis
+
+========== gcc ==========
+diff: gcc: No such file or directory
+Error: Cannot open file gcc
+
+========== -Wall ==========
+Unknown option: Wall
+Usage: /usr/local/bin/betty-style [OPTION]... [FILE]...
+Version: 0.32
+
+Options:
+  -q, --quiet                Quiet mode
+  --tree                     Run with a kernel tree.
+  --no-signoff               Do not check for 'Signed-off-by' line
+  --patch                    Treat FILE as patchfile (default)
+  --emacs                    Emacs compile window format
+  --no-terse                 Disable one line per report.
+  --showfile                 Emit diffed file position, not input file position
+  -g, --git                  Treat FILE as a single commit or git revision range
+                             Single git commit with:
+                               <rev>
+                               <rev>^
+                               <rev>~n
+                             Multiple git commits with:
+                               <rev1>..<rev2>
+                               <rev1>...<rev2>
+                               <rev>-<count>
+                             Git merges are ignored
+  --no-file                  Don't treat FILE as regular source file.
+  --subjective, --strict     Enable more subjective tests
+  --list-types               List the possible message types
+  --types TYPE(,TYPE2...)    Show only these comma separated message types
+  --ignore TYPE(,TYPE2...)   Ignore various comma separated message types
+  --show-types               Show the specific message type in the output
+  --min-conf-desc-length=n   Set the min description length, if shorter, warn
+  --root=PATH                PATH to the kernel tree root
+  --no-summary               Suppress the per-file summary
+  --mailback                 Only produce a report in case of warnings/errors
+  --summary-file             Include the filename in summary
+  --debug KEY=[0|1]          Turn on/off debugging of KEY, where KEY is one of
+                             'values', 'possible', 'type', and 'attr' (default
+                             is all off)
+  --test-only=WORD           Report only warnings/errors containing WORD
+                             literally
+  --fix                      EXPERIMENTAL - may create horrible results
+                             If correctable single-line errors exist, create
+                             "<inputfile>.EXPERIMENTAL-checkpatch-fixes"
+                             with potential errors corrected to the preferred
+                             checkpatch style
+  --fix-inplace              EXPERIMENTAL - may create horrible results
+                             Is the same as --fix, but overwrites the input
+                             file.  It's your fault if there's no backup or git
+  --ignore-perl-version      Override checking of perl version.  expect
+                             runtime errors.
+  --codespell                Use the codespell dictionary for spelling/typos
+                             (default:/usr/share/codespell/dictionary.txt)
+  --codespellfile            Use this codespell dictionary
+  --color                    Use colors when output is STDOUT (default: on)
+
+  --max-line-length=n        Set the maximum length of a line (default: 80)
+  --max-func-length=n        Set the maximum length of a function (default: 40)
+  --max-funcs=n              Set the maximum declared functions per source file
+                             (default: 5)
+                             Set it to -1 for infinite
+  --no-safe-guard            Don't check for header files protection
+  --allow-global-variables   Allow global variable definition
+  -r, --recursive            Run for every C source file (.c and .h) recursively
+
+  -h, --help, --version      Display this help and exit
+
+When FILE is - read standard input.
+
+========== -pedantic ==========
+Unknown option: pedantic
+Usage: /usr/local/bin/betty-style [OPTION]... [FILE]...
+Version: 0.32
+
+Options:
+  -q, --quiet                Quiet mode
+  --tree                     Run with a kernel tree.
+  --no-signoff               Do not check for 'Signed-off-by' line
+  --patch                    Treat FILE as patchfile (default)
+  --emacs                    Emacs compile window format
+  --no-terse                 Disable one line per report.
+  --showfile                 Emit diffed file position, not input file position
+  -g, --git                  Treat FILE as a single commit or git revision range
+                             Single git commit with:
+                               <rev>
+                               <rev>^
+                               <rev>~n
+                             Multiple git commits with:
+                               <rev1>..<rev2>
+                               <rev1>...<rev2>
+                               <rev>-<count>
+                             Git merges are ignored
+  --no-file                  Don't treat FILE as regular source file.
+  --subjective, --strict     Enable more subjective tests
+  --list-types               List the possible message types
+  --types TYPE(,TYPE2...)    Show only these comma separated message types
+  --ignore TYPE(,TYPE2...)   Ignore various comma separated message types
+  --show-types               Show the specific message type in the output
+  --min-conf-desc-length=n   Set the min description length, if shorter, warn
+  --root=PATH                PATH to the kernel tree root
+  --no-summary               Suppress the per-file summary
+  --mailback                 Only produce a report in case of warnings/errors
+  --summary-file             Include the filename in summary
+  --debug KEY=[0|1]          Turn on/off debugging of KEY, where KEY is one of
+                             'values', 'possible', 'type', and 'attr' (default
+                             is all off)
+  --test-only=WORD           Report only warnings/errors containing WORD
+                             literally
+  --fix                      EXPERIMENTAL - may create horrible results
+                             If correctable single-line errors exist, create
+                             "<inputfile>.EXPERIMENTAL-checkpatch-fixes"
+                             with potential errors corrected to the preferred
+                             checkpatch style
+  --fix-inplace              EXPERIMENTAL - may create horrible results
+                             Is the same as --fix, but overwrites the input
+                             file.  It's your fault if there's no backup or git
+  --ignore-perl-version      Override checking of perl version.  expect
+                             runtime errors.
+  --codespell                Use the codespell dictionary for spelling/typos
+                             (default:/usr/share/codespell/dictionary.txt)
+  --codespellfile            Use this codespell dictionary
+  --color                    Use colors when output is STDOUT (default: on)
+
+  --max-line-length=n        Set the maximum length of a line (default: 80)
+  --max-func-length=n        Set the maximum length of a function (default: 40)
+  --max-funcs=n              Set the maximum declared functions per source file
+                             (default: 5)
+                             Set it to -1 for infinite
+  --no-safe-guard            Don't check for header files protection
+  --allow-global-variables   Allow global variable definition
+  -r, --recursive            Run for every C source file (.c and .h) recursively
+
+  -h, --help, --version      Display this help and exit
+
+When FILE is - read standard input.
+
+========== -Werror ==========
+Unknown option: Werror
+Usage: /usr/local/bin/betty-style [OPTION]... [FILE]...
+Version: 0.32
+
+Options:
+  -q, --quiet                Quiet mode
+  --tree                     Run with a kernel tree.
+  --no-signoff               Do not check for 'Signed-off-by' line
+  --patch                    Treat FILE as patchfile (default)
+  --emacs                    Emacs compile window format
+  --no-terse                 Disable one line per report.
+  --showfile                 Emit diffed file position, not input file position
+  -g, --git                  Treat FILE as a single commit or git revision range
+                             Single git commit with:
+                               <rev>
+                               <rev>^
+                               <rev>~n
+                             Multiple git commits with:
+                               <rev1>..<rev2>
+                               <rev1>...<rev2>
+                               <rev>-<count>
+                             Git merges are ignored
+  --no-file                  Don't treat FILE as regular source file.
+  --subjective, --strict     Enable more subjective tests
+  --list-types               List the possible message types
+  --types TYPE(,TYPE2...)    Show only these comma separated message types
+  --ignore TYPE(,TYPE2...)   Ignore various comma separated message types
+  --show-types               Show the specific message type in the output
+  --min-conf-desc-length=n   Set the min description length, if shorter, warn
+  --root=PATH                PATH to the kernel tree root
+  --no-summary               Suppress the per-file summary
+  --mailback                 Only produce a report in case of warnings/errors
+  --summary-file             Include the filename in summary
+  --debug KEY=[0|1]          Turn on/off debugging of KEY, where KEY is one of
+                             'values', 'possible', 'type', and 'attr' (default
+                             is all off)
+  --test-only=WORD           Report only warnings/errors containing WORD
+                             literally
+  --fix                      EXPERIMENTAL - may create horrible results
+                             If correctable single-line errors exist, create
+                             "<inputfile>.EXPERIMENTAL-checkpatch-fixes"
+                             with potential errors corrected to the preferred
+                             checkpatch style
+  --fix-inplace              EXPERIMENTAL - may create horrible results
+                             Is the same as --fix, but overwrites the input
+                             file.  It's your fault if there's no backup or git
+  --ignore-perl-version      Override checking of perl version.  expect
+                             runtime errors.
+  --codespell                Use the codespell dictionary for spelling/typos
+                             (default:/usr/share/codespell/dictionary.txt)
+  --codespellfile            Use this codespell dictionary
+  --color                    Use colors when output is STDOUT (default: on)
+
+  --max-line-length=n        Set the maximum length of a line (default: 80)
+  --max-func-length=n        Set the maximum length of a function (default: 40)
+  --max-funcs=n              Set the maximum declared functions per source file
+                             (default: 5)
+                             Set it to -1 for infinite
+  --no-safe-guard            Don't check for header files protection
+  --allow-global-variables   Allow global variable definition
+  -r, --recursive            Run for every C source file (.c and .h) recursively
+
+  -h, --help, --version      Display this help and exit
+
+When FILE is - read standard input.
+
+========== -Wextra ==========
+Unknown option: Wextra
+Usage: /usr/local/bin/betty-style [OPTION]... [FILE]...
+Version: 0.32
+
+Options:
+  -q, --quiet                Quiet mode
+  --tree                     Run with a kernel tree.
+  --no-signoff               Do not check for 'Signed-off-by' line
+  --patch                    Treat FILE as patchfile (default)
+  --emacs                    Emacs compile window format
+  --no-terse                 Disable one line per report.
+  --showfile                 Emit diffed file position, not input file position
+  -g, --git                  Treat FILE as a single commit or git revision range
+                             Single git commit with:
+                               <rev>
+                               <rev>^
+                               <rev>~n
+                             Multiple git commits with:
+                               <rev1>..<rev2>
+                               <rev1>...<rev2>
+                               <rev>-<count>
+                             Git merges are ignored
+  --no-file                  Don't treat FILE as regular source file.
+  --subjective, --strict     Enable more subjective tests
+  --list-types               List the possible message types
+  --types TYPE(,TYPE2...)    Show only these comma separated message types
+  --ignore TYPE(,TYPE2...)   Ignore various comma separated message types
+  --show-types               Show the specific message type in the output
+  --min-conf-desc-length=n   Set the min description length, if shorter, warn
+  --root=PATH                PATH to the kernel tree root
+  --no-summary               Suppress the per-file summary
+  --mailback                 Only produce a report in case of warnings/errors
+  --summary-file             Include the filename in summary
+  --debug KEY=[0|1]          Turn on/off debugging of KEY, where KEY is one of
+                             'values', 'possible', 'type', and 'attr' (default
+                             is all off)
+  --test-only=WORD           Report only warnings/errors containing WORD
+                             literally
+  --fix                      EXPERIMENTAL - may create horrible results
+                             If correctable single-line errors exist, create
+                             "<inputfile>.EXPERIMENTAL-checkpatch-fixes"
+                             with potential errors corrected to the preferred
+                             checkpatch style
+  --fix-inplace              EXPERIMENTAL - may create horrible results
+                             Is the same as --fix, but overwrites the input
+                             file.  It's your fault if there's no backup or git
+  --ignore-perl-version      Override checking of perl version.  expect
+                             runtime errors.
+  --codespell                Use the codespell dictionary for spelling/typos
+                             (default:/usr/share/codespell/dictionary.txt)
+  --codespellfile            Use this codespell dictionary
+  --color                    Use colors when output is STDOUT (default: on)
+
+  --max-line-length=n        Set the maximum length of a line (default: 80)
+  --max-func-length=n        Set the maximum length of a function (default: 40)
+  --max-funcs=n              Set the maximum declared functions per source file
+                             (default: 5)
+                             Set it to -1 for infinite
+  --no-safe-guard            Don't check for header files protection
+  --allow-global-variables   Allow global variable definition
+  -r, --recursive            Run for every C source file (.c and .h) recursively
+
+  -h, --help, --version      Display this help and exit
+
+When FILE is - read standard input.
+
+========== -std=gnu89 ==========
+Unknown option: std
+Usage: /usr/local/bin/betty-style [OPTION]... [FILE]...
+Version: 0.32
+
+Options:
+  -q, --quiet                Quiet mode
+  --tree                     Run with a kernel tree.
+  --no-signoff               Do not check for 'Signed-off-by' line
+  --patch                    Treat FILE as patchfile (default)
+  --emacs                    Emacs compile window format
+  --no-terse                 Disable one line per report.
+  --showfile                 Emit diffed file position, not input file position
+  -g, --git                  Treat FILE as a single commit or git revision range
+                             Single git commit with:
+                               <rev>
+                               <rev>^
+                               <rev>~n
+                             Multiple git commits with:
+                               <rev1>..<rev2>
+                               <rev1>...<rev2>
+                               <rev>-<count>
+                             Git merges are ignored
+  --no-file                  Don't treat FILE as regular source file.
+  --subjective, --strict     Enable more subjective tests
+  --list-types               List the possible message types
+  --types TYPE(,TYPE2...)    Show only these comma separated message types
+  --ignore TYPE(,TYPE2...)   Ignore various comma separated message types
+  --show-types               Show the specific message type in the output
+  --min-conf-desc-length=n   Set the min description length, if shorter, warn
+  --root=PATH                PATH to the kernel tree root
+  --no-summary               Suppress the per-file summary
+  --mailback                 Only produce a report in case of warnings/errors
+  --summary-file             Include the filename in summary
+  --debug KEY=[0|1]          Turn on/off debugging of KEY, where KEY is one of
+                             'values', 'possible', 'type', and 'attr' (default
+                             is all off)
+  --test-only=WORD           Report only warnings/errors containing WORD
+                             literally
+  --fix                      EXPERIMENTAL - may create horrible results
+                             If correctable single-line errors exist, create
+                             "<inputfile>.EXPERIMENTAL-checkpatch-fixes"
+                             with potential errors corrected to the preferred
+                             checkpatch style
+  --fix-inplace              EXPERIMENTAL - may create horrible results
+                             Is the same as --fix, but overwrites the input
+                             file.  It's your fault if there's no backup or git
+  --ignore-perl-version      Override checking of perl version.  expect
+                             runtime errors.
+  --codespell                Use the codespell dictionary for spelling/typos
+                             (default:/usr/share/codespell/dictionary.txt)
+  --codespellfile            Use this codespell dictionary
+  --color                    Use colors when output is STDOUT (default: on)
+
+  --max-line-length=n        Set the maximum length of a line (default: 80)
+  --max-func-length=n        Set the maximum length of a function (default: 40)
+  --max-funcs=n              Set the maximum declared functions per source file
+                             (default: 5)
+                             Set it to -1 for infinite
+  --no-safe-guard            Don't check for header files protection
+  --allow-global-variables   Allow global variable definition
+  -r, --recursive            Run for every C source file (.c and .h) recursively
+
+  -h, --help, --version      Display this help and exit
+
+When FILE is - read standard input.
+
+========== 0-whatsmyname.c ==========
+main
+
+========== -o ==========
+Unknown option: o
+Usage: /usr/local/bin/betty-style [OPTION]... [FILE]...
+Version: 0.32
+
+Options:
+  -q, --quiet                Quiet mode
+  --tree                     Run with a kernel tree.
+  --no-signoff               Do not check for 'Signed-off-by' line
+  --patch                    Treat FILE as patchfile (default)
+  --emacs                    Emacs compile window format
+  --no-terse                 Disable one line per report.
+  --showfile                 Emit diffed file position, not input file position
+  -g, --git                  Treat FILE as a single commit or git revision range
+                             Single git commit with:
+                               <rev>
+                               <rev>^
+                               <rev>~n
+                             Multiple git commits with:
+                               <rev1>..<rev2>
+                               <rev1>...<rev2>
+                               <rev>-<count>
+                             Git merges are ignored
+  --no-file                  Don't treat FILE as regular source file.
+  --subjective, --strict     Enable more subjective tests
+  --list-types               List the possible message types
+  --types TYPE(,TYPE2...)    Show only these comma separated message types
+  --ignore TYPE(,TYPE2...)   Ignore various comma separated message types
+  --show-types               Show the specific message type in the output
+  --min-conf-desc-length=n   Set the min description length, if shorter, warn
+  --root=PATH                PATH to the kernel tree root
+  --no-summary               Suppress the per-file summary
+  --mailback                 Only produce a report in case of warnings/errors
+  --summary-file             Include the filename in summary
+  --debug KEY=[0|1]          Turn on/off debugging of KEY, where KEY is one of
+                             'values', 'possible', 'type', and 'attr' (default
+                             is all off)
+  --test-only=WORD           Report only warnings/errors containing WORD
+                             literally
+  --fix                      EXPERIMENTAL - may create horrible results
+                             If correctable single-line errors exist, create
+                             "<inputfile>.EXPERIMENTAL-checkpatch-fixes"
+                             with potential errors corrected to the preferred
+                             checkpatch style
+  --fix-inplace              EXPERIMENTAL - may create horrible results
+                             Is the same as --fix, but overwrites the input
+                             file.  It's your fault if there's no backup or git
+  --ignore-perl-version      Override checking of perl version.  expect
+                             runtime errors.
+  --codespell                Use the codespell dictionary for spelling/typos
+                             (default:/usr/share/codespell/dictionary.txt)
+  --codespellfile            Use this codespell dictionary
+  --color                    Use colors when output is STDOUT (default: on)
+
+  --max-line-length=n        Set the maximum length of a line (default: 80)
+  --max-func-length=n        Set the maximum length of a function (default: 40)
+  --max-funcs=n              Set the maximum declared functions per source file
+
