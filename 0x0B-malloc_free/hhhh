@@ -1,0 +1,20 @@
+dMin@DESKTOP-R54TNBM MINGW64 ~
+$ ssh b4ffd8927885@b4ffd8927885.96e14a5c.alx-cod.online
+b4ffd8927885@b4ffd8927885.96e14a5c.alx-cod.online's password:
+
+root@b4ffd8927885:/#
+root@b4ffd8927885:/# ls
+alx-low_level_programming      Betty  boot  etc   lib    lib64   media  opt   root
+alx-system_engineering-devops  bin    dev   home  lib32  libx32  mnt    proc  run
+root@b4ffd8927885:/# cd alx-low_level_programming
+root@b4ffd8927885:/alx-low_level_programming# mkdir 0x0B-malloc_free
+root@b4ffd8927885:/alx-low_level_programming# cd 0x0B-malloc_free
+root@b4ffd8927885:/alx-low_level_programming/0x0B-malloc_free# vi README.md
+root@b4ffd8927885:/alx-low_level_programming/0x0B-malloc_free# vi main.h
+root@b4ffd8927885:/alx-low_level_programming/0x0B-malloc_free# vi _putchar.c
+root@b4ffd8927885:/alx-low_level_programming/0x0B-malloc_free# vi 0-create_array.c
+root@b4ffd8927885:/alx-low_level_programming/0x0B-malloc_free# vi 1-strdup.c
+root@b4ffd8927885:/alx-low_level_programming/0x0B-malloc_free# vi 2-str_concat.c
+root@b4ffd8927885:/alx-low_level_programming/0x0B-malloc_free# vi 3-alloc_grid.c
+root@b4ffd8927885:/alx-low_level_programming/0x0B-malloc_free# vi
+
